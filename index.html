@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            width: 700px;
+            background-color: rgb(240, 229, 229);
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .custom-table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .basic {
+            background-color: lightcoral;
+        }
+
+        .plus {
+            background-color: lightgreen;
+        }
+
+        .deluxe {
+            background-color: skyblue;
+        }
+
+        .pro {
+            background-color: orange;
+        }
+
+        .custom-table td,
+        .custom-table th {
+            width: 150px;
+            padding: 10px 5px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+        }
+
+        .custom-table th {
+            height: 70px;
+            color: black;
+            margin-right: 28px;
+        }
+
+        i {
+            font-size: 30px;
+            color: black;
+            margin-right: 10px;
+        }
+
+        tbody tr:nth-child(odd),
+        tfoot tr:nth-child(odd) {
+            background-color: bisque;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: blue;
+            padding: 5px;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        a:hover {
+            background-color: red;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        tbody tr:first-child td {
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Select Your Plan</h2>
+        <table class="custom-table">
+            <colgroup class="basic"></colgroup>
+            <colgroup class="plus"></colgroup>
+            <colgroup class="deluxe"></colgroup>
+            <colgroup class="pro"></colgroup>
+            <thead>
+                <tr>
+                    <th><i class="fa fa-building"></i>Basic</th>
+                    <th><i class="fa fa-superpowers"></i>Plus</th>
+                    <th><i class="fa fa-telegram"></i>Deluxe</th>
+                    <th><i class="fa fa-tachometer"></i>Pro</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rs. 500/-</td>
+                    <td>Rs. 1500/-</td>
+                    <td>Rs. 2500/-</td>
+                    <td>Rs. 3500/-</td>
+                </tr>
+                <tr>
+                    <td>50 pages</td>
+                    <td>75 pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>3 users</td>
+                    <td>5 users</td>
+                    <td>10 users</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>10 sites</td>
+                    <td>25 sites</td>
+                    <td>100 sites</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>5 GB</td>
+                </tr>
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                </tr>
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-times" style="color: red;"></i></td>
+                    <td><i class="fa fa-check" style="color:green;"></i></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><a href="#">Sign Up</a></td>
+                    <td><a href="#">Sign Up</a></td>
+                    <td><a href="#">Sign Up</a></td>
+                    <td><a href="#">Sign Up</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
